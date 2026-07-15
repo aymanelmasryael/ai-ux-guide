@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0F1B2E"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0074FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00FFCC" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0F1729" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0074FF"/>
+      <stop offset="100%" stop-color="#00FFCC"/>
+    </linearGradient>
+    <filter id="glowFilter">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,80)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,160)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,240)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,320)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,400)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,480)"/>
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#0074FF" stroke-width="0.5" transform="translate(0,560)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(160,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(320,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(480,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(640,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(800,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(960,0)"/>
+    <line x1="0" y1="0" x2="0" y2="640" stroke="#0074FF" stroke-width="0.5" transform="translate(1120,0)"/>
+  </g>
+
+  <!-- Glow background -->
+  <ellipse cx="900" cy="320" rx="400" ry="320" fill="url(#glow)"/>
+
+  <!-- Neural network visualization -->
+  <g opacity="0.4">
+    <!-- Connections -->
+    <line x1="700" y1="180" x2="820" y2="240" stroke="#0074FF" stroke-width="1" opacity="0.5"/>
+    <line x1="700" y1="180" x2="780" y2="360" stroke="#00FFCC" stroke-width="1" opacity="0.4"/>
+    <line x1="820" y1="240" x2="950" y2="200" stroke="#0074FF" stroke-width="1" opacity="0.5"/>
+    <line x1="820" y1="240" x2="900" y2="340" stroke="#00FFCC" stroke-width="1" opacity="0.4"/>
+    <line x1="780" y1="360" x2="900" y2="340" stroke="#0074FF" stroke-width="1" opacity="0.5"/>
+    <line x1="950" y1="200" x2="1050" y2="280" stroke="#00FFCC" stroke-width="1" opacity="0.4"/>
+    <line x1="900" y1="340" x2="1050" y2="280" stroke="#0074FF" stroke-width="1" opacity="0.5"/>
+    <line x1="700" y1="180" x2="950" y2="200" stroke="#0074FF" stroke-width="0.5" opacity="0.2"/>
+    <line x1="780" y1="360" x2="1050" y2="280" stroke="#00FFCC" stroke-width="0.5" opacity="0.2"/>
+    <line x1="820" y1="240" x2="1050" y2="280" stroke="#0074FF" stroke-width="0.5" opacity="0.15"/>
+
+    <!-- Nodes -->
+    <circle cx="700" cy="180" r="8" fill="#0074FF" filter="url(#glowFilter)"/>
+    <circle cx="820" cy="240" r="6" fill="#00FFCC"/>
+    <circle cx="780" cy="360" r="6" fill="#0074FF"/>
+    <circle cx="950" cy="200" r="7" fill="#00FFCC"/>
+    <circle cx="900" cy="340" r="5" fill="#0074FF"/>
+    <circle cx="1050" cy="280" r="8" fill="#00FFCC" filter="url(#glowFilter)"/>
+
+    <!-- Outer ring on first node -->
+    <circle cx="700" cy="180" r="14" fill="none" stroke="#0074FF" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="1050" cy="280" r="14" fill="none" stroke="#00FFCC" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Glassmorphism card -->
+  <rect x="60" y="70" width="560" height="500" rx="16" fill="url(#cardBg)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Accent top bar -->
+  <rect x="60" y="70" width="560" height="3" rx="1.5" fill="url(#accentLine)"/>
+
+  <!-- AEL Logo -->
+  <g transform="translate(100, 115) scale(0.7)">
+    <path d="m97.19,48.59v16.2h-32.4v-16.2c0-8.94-7.25-16.2-16.2-16.2s-16.2,7.25-16.2,16.2v16.2H0v-16.2c0-5.68.98-11.13,2.76-16.2C9.44,13.52,27.44,0,48.59,0s39.16,13.52,45.83,32.4c1.79,5.07,2.76,10.52,2.76,16.2Z" fill="#ffffff"/>
+    <rect y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="97.19" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="32.4" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="32.4" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="64.79" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="97.19" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="129.58" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="161.98" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+    <rect x="194.38" y="194.38" width="32.4" height="32.4" fill="#0074FF"/>
+  </g>
+
+  <!-- Title -->
+  <text x="100" y="200" font-family="Helvetica, sans-serif" font-size="32" font-weight="700" fill="#F1F5F9" letter-spacing="-0.5">
+    <tspan x="100" dy="0">AI &amp; UX Knowledge Base</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="100" y="240" font-family="Helvetica, sans-serif" font-size="16" fill="#64748B" letter-spacing="0.3">
+    <tspan x="100" dy="0">Q&amp;A Reference Engine — Structural Scaffold</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="100" y1="270" x2="400" y2="270" stroke="url(#accentLine)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Description lines -->
+  <text x="100" y="310" font-family="'SF Mono', Menlo, monospace" font-size="13" fill="#94A3B8">
+    <tspan x="100" dy="0">2,001 Q&amp;A cards</tspan>
+  </text>
+  <text x="100" y="333" font-family="'SF Mono', Menlo, monospace" font-size="13" fill="#94A3B8">
+    <tspan x="100" dy="0">AI · UX Design · Software Engineering</tspan>
+  </text>
+  <text x="100" y="356" font-family="'SF Mono', Menlo, monospace" font-size="13" fill="#94A3B8">
+    <tspan x="100" dy="0">Zero-dependency static web app</tspan>
+  </text>
+
+  <!-- Version badge -->
+  <rect x="100" y="395" width="100" height="28" rx="4" fill="#0074FF" fill-opacity="0.15" stroke="#0074FF" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="150" y="414" font-family="'SF Mono', Menlo, monospace" font-size="13" font-weight="600" fill="#0074FF" text-anchor="middle">v0.1.0</text>
+
+  <!-- AEL Digital Studio footer -->
+  <text x="100" y="510" font-family="Helvetica, sans-serif" font-size="11" fill="#475569" letter-spacing="1.5">AEL DIGITAL STUDIO</text>
+</svg>
