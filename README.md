@@ -86,6 +86,14 @@ This will overwrite `data.js`. The script uses `require('fs')` and runs in Node.
 
 ---
 
+## 🔗 Related Resources
+
+- [AEL Learning Catalog](https://github.com/aymanelmasryael/ael-learning-catalog) — Central entry point to all AEL courses
+- [Engineering Academy](https://github.com/aymanelmasryael/ael-engineering-academy) — Complete LLM engineering platform from zero to production
+- [CS50 Companion](https://github.com/aymanelmasryael/AEL-Sovereign-CS50x-2026-2027) — Harvard CS50x master citadel with exams, IDE, and AI prompt engineering
+
+---
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
