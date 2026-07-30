@@ -6,6 +6,15 @@
 
 An interactive, zero-dependency Q&A browser for AI-assisted UX design and software engineering topics. Built with vanilla HTML, CSS, and JavaScript.
 
+## 📚 Learning Metadata
+
+| | |
+|---|---|
+| **Learning Level** | Intermediate (Pre-release scaffold) |
+| **Estimated Duration** | Self-paced (2,001 Q&A cards) |
+| **Prerequisites** | Basic UX design and software engineering concepts |
+| **Learning Outcomes** | Explore AI-assisted UX design topics across 2,001 Q&A cards, filter by tags and difficulty, deep-link to specific cards |
+
 ---
 
 ## Overview
